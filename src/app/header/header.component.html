@@ -29,7 +29,7 @@
 
       <div class="pull-left">
         <h1><a href="http://blog.miniasp.com/">{{ sitename }}</a></h1>
-        <h3 [ngStyle]="{'font-size': counter + 'px'}">{{sitetitle}}{{counter}}</h3>
+        <h3 [style.font-size.px]=counter>{{sitetitle}}{{counter}}</h3>
       </div>
 
       <div id="social-icons" class="pull-right social-icon">
