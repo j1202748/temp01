@@ -12,4 +12,8 @@ export class AppComponent {
   data = {
       keyword : 'demo1'
   }
+  doSearch($event:string)
+  {
+    this.data.keyword = $event;
+  }
 }
