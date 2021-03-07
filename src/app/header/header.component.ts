@@ -25,6 +25,7 @@ export class HeaderComponent implements OnInit {
   //click事件
   changename($event: MouseEvent){
     this.counter++;
+
     console.log($event);
     if($event.ctrlKey){
       this.sitename="The Will Will Web";
