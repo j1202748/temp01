@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Article } from './Article';
 
 @Component({
   selector: 'app-root',
@@ -14,14 +15,14 @@ export class AppComponent {
       keyword : 'demo1'
   }
 
-  data : any[] =[];
+  data : Article[] =[];
 
   constructor(private http:HttpClient){}
 
   ngOnInit(): void {
-  this.http.get<any[]>('/api/articles.json').subscribe(re=>{
+  this.http.get<Article[]>('/api/articles.json').subscribe(result=>{
 
-    this.data= re;
+    this.data= result;
   });
 
 
@@ -42,3 +43,5 @@ export class AppComponent {
     }
   }
 }
+
+
