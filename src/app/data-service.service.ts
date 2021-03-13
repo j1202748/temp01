@@ -7,7 +7,7 @@ import { Article } from './Article';
 })
 export class DataServiceService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   loadArticle(){
     return this.http.get<Article[]>('/api/articles.json');

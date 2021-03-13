@@ -35,7 +35,7 @@ export class AppComponent {
     this.search.keyword = $event;
 
     //BUG 老師想的怪方法解法 = =   ，先輸入字按Enter，再按ESC，再輸入字後按ESC有BUG
-    if($event == '')
+    if($event === '')
     {
       this.search.keyword=' ';
       setTimeout(()=>{
@@ -43,6 +43,12 @@ export class AppComponent {
       },1);
 
     }
+  }
+
+  doDelete(id: number)
+  {
+    console.log('刪除 id =' + id + '的文章');
+
   }
 }
 
