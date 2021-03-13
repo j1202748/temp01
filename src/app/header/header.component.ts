@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   sitename ='Hello word!!';
-  sitelogo="/assets/images/logo.png";
-  sitetitle="記載著 Will 在網路世界的學習心得與技術分享"; //innerHTML
+  sitelogo='/assets/images/logo.png';
+  sitetitle='記載著 Will 在網路世界的學習心得與技術分享'; //innerHTML
 
   counter=10;
 
@@ -28,7 +28,7 @@ export class HeaderComponent implements OnInit {
 
     console.log($event);
     if($event.ctrlKey){
-      this.sitename="The Will Will Web";
+      this.sitename='The Will Will Web';
     }
   }
 }
